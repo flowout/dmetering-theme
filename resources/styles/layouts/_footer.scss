@@ -1,0 +1,158 @@
+footer {
+  background-color: $almost-black;
+  color: $white-1;
+}
+
+.footer-logo {
+  margin-right: 58px;
+}
+
+.footer-newsletter {
+  @extend .flex-grow-1;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 32px;
+
+  @include media-breakpoint-down(md) {
+    max-width: none;
+  }
+
+  form {
+    @extend .d-flex, .flex-column;
+  }
+
+  .form-control {
+    color: $white-1;
+
+    &:focus {
+      color: $white-1;
+    }
+  }
+}
+
+.footer-inner {
+  @extend .d-flex, .flex-column, .d-lg-block;
+}
+
+.footer-primary {
+  @extend .d-lg-flex, .justify-content-between, .order-1, .order-lg-0;
+
+  padding: 20px 0 28px;
+}
+
+.footer-primary-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-left: 48px;
+
+  @include media-breakpoint-down(lg) {
+    margin-left: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    gap: 24px 16px;
+  }
+
+  > div {
+    width: 144px;
+  }
+}
+
+.footer-title {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.footer-secondary {
+  @extend .d-md-flex, .justify-content-between, .align-items-center, .order-0, .order-lg-1;
+
+  padding: 24px 0;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 12px;
+  }
+
+  &__right {
+    @extend .flex-grow-1, .d-flex, .justify-content-between, .align-items-center;
+
+    @include media-breakpoint-down(md) {
+        margin-top: 32px;
+    }
+  }
+}
+
+.footer-secondary-menu {
+  @extend .d-flex, .align-items-center;
+}
+
+.footer-bottom {
+  border-top: 1px solid $dark-gray-1;
+}
+
+.footer-copyright {
+  @extend .d-md-flex, .justify-content-between, .align-items-center;
+  color: $gray-1;
+  padding: 16px 0;
+}
+
+.footer-links {
+  .menu-item {
+    a {
+      color: $gray-1;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+.nav {
+  .menu-item {
+    margin: 0 28px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &.flex-column {
+    .menu-item {
+      margin: 6px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.copyright-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  @include media-breakpoint-down(md) {
+    text-align: center;
+    padding: 16px 0;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #menu-copyright-menu {
+    display: block;
+    text-align: center;
+
+    li {
+      margin: 6px 0;
+    }
+  }
+}

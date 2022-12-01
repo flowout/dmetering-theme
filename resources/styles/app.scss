@@ -1,0 +1,37 @@
+@import "common/variables";
+
+// Bootstrap
+@import "bootstrap";
+
+// Material Icons
+@import 'material-icons/iconfont/material-icons.scss';
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+/** Import theme styles */
+@import "common/global";
+@import "common/containers";
+@import "components/buttons";
+@import "components/forms";
+@import "components/hero";
+@import "components/sliders";
+@import "components/faq";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+@import "pages/home";
+@import "woocommerce/content-product";
+@import "woocommerce/archive-product";
+@import "woocommerce/single-product";
+@import "woocommerce/my-account";
+@import "woocommerce/cart";
+@import "woocommerce/checkout";

@@ -1,0 +1,187 @@
+.product-card {
+  width: 100%;
+  background-color: $white;
+  border: 1px solid $light-gray-1;
+  padding: 16px;
+
+  &__top {
+    position: relative;
+    padding-bottom: 16px;
+  }
+
+  &__buttons {
+    @extend .d-flex, .flex-row, .align-items-start, .justify-content-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &-left {
+      @extend .w-100;
+    }
+
+    &-right {
+      @extend .flex-shrink-1;
+
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__stock {
+    @extend .text-break;
+    background-color: $green-1;
+    padding: 4px 8px;
+    color: $green-3;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  &__assets {
+    position: relative;
+    padding: 24px 28px;
+    padding-bottom: 0;
+    height: 182px;
+  }
+
+  &__brand {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 90px;
+      max-height: 24px;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__image {
+    height: 100%;
+
+    img {
+      @extend .d-flex, .align-items-center, .justify-content-center;
+      object-fit: contain;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__tag {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $dark-4;
+    margin-bottom: 8px;
+  }
+
+  &__middle {
+    padding-top: 12px;
+  }
+
+  &__title a {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $black;
+    margin-bottom: 16px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .add_to_cart_btn {
+    @extend .btn, .d-flex, .align-items-center, .justify-content-center;
+    height: 48px;
+    width: 100%;
+  }
+
+  .product-card__buttons-listed {
+    margin-top: 20px;
+
+    .btn__transparent {
+      width: auto;
+      height: auto;
+
+      >span {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .product-card__buttons-listed,
+  .product-short-desc {
+    @extend .d-none;
+  }
+
+  .simplefavorite-button {
+    @extend .btn, .btn__transparent;
+    
+    width: 32px;
+    height: 32px;
+    color: transparent;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      color: transparent;
+    }
+
+    span {
+      color: $black;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+    }
+  }
+
+  .compare-button {
+    .compare {
+      @extend .btn, .btn__transparent;
+
+      position: relative;
+      width: 32px;
+      height: 32px;
+      color: transparent;
+      overflow: hidden;
+
+      &::before {
+        font-family: "Material Icons Outlined";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "liga";
+        content: '\e03b';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        color: $black;
+      }
+    }
+  }
+}
+

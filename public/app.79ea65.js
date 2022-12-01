@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksage=self.webpackChunksage||[]).push([[143],{683:function(e,n,r){var s=r(194);r(169);const c=async e=>{e&&console.error(e),document.querySelector(".swiper")&&new Swiper(".swiper",{speed:400,spaceBetween:100})};(0,s.domReady)(c)},190:function(){}},function(e){var n=function(n){return e(e.s=n)};e.O(0,[329],(function(){return n(683),n(190)})),e.O()}]);

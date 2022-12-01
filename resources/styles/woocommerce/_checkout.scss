@@ -1,0 +1,24 @@
+.dmetering-checkout {
+  @extend .d-lg-flex, .align-items-start, .justify-content-between;
+  gap: 2em;
+
+  .woocommerce-additional-fields {
+    margin-top: 1em;
+  }
+}
+
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order {
+  float: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+.dmetering-customer-summary, .dmetering-checkout-summary {
+  width: 50%;
+
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    margin-bottom: 1.2em;
+  }
+}

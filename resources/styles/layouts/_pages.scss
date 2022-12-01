@@ -1,0 +1,20 @@
+.contact .page-header {
+  text-align: center;
+}
+
+.favorites-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+
+  li {
+    border: 1px solid $gray-2;
+    border-radius: 16px;
+    margin-bottom: 24px;
+
+    a {
+      color: $black;
+      font-size: 20px;
+    }
+  }
+}

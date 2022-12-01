@@ -1,0 +1,48 @@
+.hero-slider {
+    .swiper-pagination {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .swiper-dots {
+        position: static;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 40px;
+    
+        .swiper-pagination-bullet {
+            opacity: 1;
+            background: $white;
+            margin: 0 6px !important;
+    
+            &:last-child {
+                margin-right: 0 !important;
+            }
+            
+            &.swiper-pagination-bullet-active {
+                background: $green;
+            }
+        }
+    }
+}
+
+.products-slider {
+    overflow: hidden;
+
+    .swiper {
+        overflow: visible;
+    }
+
+    .swiper-slide {
+      width: 294px;
+    }
+}
+
+.slider__navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}

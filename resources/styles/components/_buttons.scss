@@ -1,0 +1,86 @@
+.btn {
+    background-color: $green;
+    color: $white;
+    padding: 8px 24px;
+    font-weight: 500;
+
+    &__rounded {
+      @extend .d-flex, .align-items-center, .justify-content-center;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+    }
+
+    &__transparent {
+      @extend .d-flex, .align-items-center, .justify-content-center;
+      width: 26px;
+      height: 26px;
+      padding: 2px;
+      color: $black;
+      background-color: transparent;
+      margin-bottom: 12px;
+      border-radius: 0;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    &__borderless {
+      @extend .d-flex, .align-items-center;
+
+      background-color: transparent;
+      color: black;
+      padding: 0;
+      border: 0;
+      margin-left: 48px;
+      
+      span {
+        margin-right: 8px;
+      }
+
+      &:hover {
+        color: $green;
+      }
+    }
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  @extend .btn;
+
+  &:hover, &:focus {
+    @extend .btn;
+    color: $black;
+  }
+
+  &:disabled {
+    background-color: $gray;
+    color: $black;
+    padding: 8px 24px !important;
+  }
+}
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+  @extend .btn;
+  width: 100%;
+  font-size: 20px;
+  &:hover, &:focus {
+    background-color: $green;
+    color: $black;
+    font-size: 20px;
+  }
+}
+
+button[type="submit"] {
+  margin-top: 0.5em !important;
+}

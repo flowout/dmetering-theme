@@ -1,0 +1,39 @@
+.section--faq {
+  border-top: 24px solid $white-smoke-2;
+}
+.faq-section {
+  @extend .d-lg-flex, .align-items-start, .justify-content-between;
+  gap: 200px;
+  padding-top: 80px;
+
+  .accordion {
+    @include media-breakpoint-up(lg) {
+      max-width: 600px;
+    }
+  }
+}
+.accordion {
+  width: 100%;
+}
+.accordion-item {
+  margin-bottom: 16px;
+  border-bottom: 1px solid $black;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.accordion-body {
+  padding-top: 0;
+}
+.accordion-button {
+  @extend .justify-content-between;
+  
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+
+  font-weight: 500;
+
+  &::after {
+    margin-left: 10px;
+  }
+}

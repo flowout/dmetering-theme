@@ -1,0 +1,87 @@
+.form-control {
+    border-color: $gray-1;
+    background-color: transparent;
+    background: transparent;
+    //color: $white-1;
+
+    &:focus {
+        background-color: transparent;
+        background: transparent;
+        //color: $white-1;
+        border-color: $gray-1;
+    }
+
+    &::placeholder {
+        color: $dark-gray;
+    }
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea {
+  @extend .form-control;
+}
+
+input[type="checkbox"] {
+  appearance: none !important;
+  position: relative !important;
+  width: 20px !important;
+  height: 20px !important;
+  background-color: $white !important;
+  border: 1px solid $gray-1 !important;
+  border-radius: 4px !important;
+  cursor: pointer;
+  margin: 0 !important;
+  margin-right: 8px !important;
+  padding: 0 !important;
+  display: inline-block !important;
+
+  &:checked {
+    background-color: $green !important;
+  }
+
+  &::after {
+    font-family: "Material Icons";
+    content: "\e5ca";
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: $white !important;
+    opacity: 0 !important;
+  }
+
+  &:checked::after {
+    opacity: 1 !important;
+  }
+}
+
+.basic-form {
+  max-width: 480px;
+  margin: 0 auto;
+
+  label {
+    font-weight: 500 !important;
+    margin-bottom: 4px;
+  }
+  input, textarea {
+    @extend .form-control;
+  }
+  ul, ol {
+    padding: 0;
+    margin: 0;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+.wpforms-field-checkbox {
+  input[type="checkbox"] {
+    margin-bottom: -4px !important;
+  }
+}

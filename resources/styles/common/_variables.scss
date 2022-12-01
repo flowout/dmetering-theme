@@ -1,0 +1,72 @@
+$white: #fff;
+$white-1: #FAFAFA;
+$white-smoke: #f4f4f4;
+$white-smoke-2: #f8f8f8;
+$white-smoke-3: #f5f5f5;
+$gray: #bfbfbf;
+$gray-1: #BDBDBD;
+$gray-2: #C7C7C7;
+$light-gray: #828282;
+$light-gray-1: #E1E1E1;
+$light-gray-2: #E5E5E5;
+$dark-gray: #9e9e9e;
+$dark-gray-1: #616161;
+$dark: #212121;
+$dark-1: #333;
+$dark-2: #323232;
+$dark-3: #3E3E3E;
+$dark-4: #464646;
+$dark-5: #959595;
+$black: #000;
+$almost-black: #212121;
+$body-black: #06142A;
+$blue: #2F80ED;
+$blue-1: #3771C8;
+$yellow-0: #f0eee8;
+$yellow-1: #fff4e3;
+$yellow-2: #ff9500;
+$green: #64BE73;
+$green-1: #CBEDD1;
+$green-2: #26852f;
+$green-3: #255817;
+$green-hover: rgba(145, 217, 100, 0.5);
+$red: #DB2427;
+$focus-box-shadow: rgba(48, 117, 176, 0.8);
+
+$dot-width: 10px !default;
+$dot-height: 10px !default;
+$dot-radius: $dot-width * 0.5 !default;
+
+$dot-color: $dark-gray !default;
+$dot-bg-color: $dot-color !default;
+$dot-before-color: $dot-color !default;
+$dot-after-color: $dot-color !default;
+
+$dot-spacing: $dot-width + $dot-width * 0.5 !default;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1400px
+) !default;
+
+$body-color: $body-black;
+$body-font-family: "Inter", sans-serif;
+$headings-color: $black;
+
+$link-decoration: none !default;
+$link-hover-color: $green !default;
+$btn-link-color: $green !default;
+
+$accordion-bg: $white-smoke-3 !default;
+$accordion-border-radius: 0 !default;
+$accordion-button-active-bg: $white-smoke-3 !default;
+$accordion-button-active-color: $black !default;
+$accordion-border-width: 0 !default;
+$accordion-color: $black !default;
+$accordion-button-focus-border-color: none !default;
+$accordion-button-focus-box-shadow: none !default;
+$accordion-padding-y: 16px !default;
+$accordion-padding-x: 24px !default;
+$accordion-icon-width: 16px !default;
